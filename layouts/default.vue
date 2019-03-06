@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <Greeting></Greeting>
     <main role="main">
       <nuxt/>
     </main>
@@ -8,12 +7,7 @@
 </template>
 
 <script>
-  import Greeting from '~/components/greeting.vue'
-
   export default {
-    components: {
-      Greeting
-    }
   }
 </script>
 

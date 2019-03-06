@@ -8,6 +8,7 @@
         <div class="page-bar wrapper">
           <a href="/" class="person-name">{{ person.fields.name }}</a>
           <Navigation></Navigation>
+          <LanguageSelector />
         </div>
         <div class="page-info wrapper">
           <h2>{{ person.fields.title }}</h2>
@@ -51,6 +52,7 @@
 import {createClient} from '~/plugins/contentful.js'
 import Navigation from '~/components/navigation.vue'
 import ArticlePreview from '~/components/article-preview.vue'
+import LanguageSelector from '~/components/language-selector.vue'
 
 const client = createClient()
 
@@ -73,7 +75,8 @@ export default {
   },
   components: {
     Navigation,
-    ArticlePreview
+    ArticlePreview,
+    LanguageSelector
   }
 }
 </script>

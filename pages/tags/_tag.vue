@@ -4,7 +4,8 @@
       <div class="foreground">
         <div class="page-bar wrapper">
           <a href="/" class="person-name">John Doe</a>
-          <Navigation></Navigation>
+          <Navigation />
+          <LanguageSelector />
         </div>
         <div class="page-info wrapper">
           <h2>#{{ tag }}</h2>
@@ -29,6 +30,7 @@
 import {createClient} from '~/plugins/contentful.js'
 import Navigation from '~/components/navigation.vue'
 import ArticlePreview from '~/components/article-preview.vue'
+import LanguageSelector from '~/components/language-selector.vue'
 
 const client = createClient()
 
@@ -47,7 +49,8 @@ export default {
   },
   components: {
     ArticlePreview,
-    Navigation
+    Navigation,
+    LanguageSelector
   }
 }
 </script>

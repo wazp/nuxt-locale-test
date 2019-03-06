@@ -4,7 +4,8 @@
       <div class="foreground">
         <div class="page-bar wrapper">
           <a href="/" class="person-name">John Doe</a>
-          <Navigation></Navigation>
+          <Navigation />
+          <LanguageSelector />
         </div>
       </div>
       <div>
@@ -36,6 +37,7 @@
 import VueMarkdown from 'vue-markdown'
 import {createClient} from '~/plugins/contentful.js'
 import Navigation from '~/components/navigation.vue'
+import LanguageSelector from '~/components/language-selector.vue'
 
 const client = createClient()
 
@@ -53,7 +55,8 @@ export default {
   },
   components: {
     Navigation,
-    VueMarkdown
+    VueMarkdown,
+    LanguageSelector
   }
 }
 </script>
